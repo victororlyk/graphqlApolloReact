@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Mutation } from "react-apollo";
 import { withRouter } from "react-router-dom";
 
-import { ADD_RECIPE, GET_ALL_RECIPES } from "../../queries";
+import { ADD_RECIPE, GET_ALL_RECIPES, GET_USER_RECIPES } from "../../queries";
 import Error from "../Error";
 import withAuth from "../hoc/withAuth";
 
@@ -47,9 +47,9 @@ class AddRecipe extends Component {
 		return isInvalid;
 	};
 	//maybe async is not necessary here.
-	updateCache = async (cache, { data: { addRecipe } }) => {
+	updateCache =  (cache, { data: { addRecipe } }) => {
 		// get old data
-		const { getAllRecipes } = await cache.readQuery({ query: GET_ALL_RECIPES });
+		const { getAllRecipes } = cache.readQuery({ query: GET_ALL_RECIPES });
 		// put new data to old data
 		cache.writeQuery({
 			query: GET_ALL_RECIPES,
@@ -66,6 +66,9 @@ class AddRecipe extends Component {
 				mutation={ ADD_RECIPE }
 				variables={ { name, category, description, instructions, username } }
 				update={ this.updateCache }
+				refetchQueries={ () => [
+					{ query: GET_USER_RECIPES, variables: { username } }
+				] }
 			>
 				{ (addRecipe, { data, loading, error }) => {
 					return (

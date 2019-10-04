@@ -8,7 +8,7 @@ const UserInfo = ({ session: { getCurrentUser: { username, email, joinDate, favo
 		return `${ newDate } at ${ newTime }`;
 	};
 	return (
-		<div>s
+		<div>
 			<h3>User Info</h3>
 			<p>Username: { username }</p>
 			<p>Email: { email }</p>

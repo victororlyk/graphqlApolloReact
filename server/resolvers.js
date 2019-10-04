@@ -56,11 +56,7 @@ exports.resolvers = {
 		},
 	},
 	Mutation: {
-		addRecipe: async (
-			root,
-			{ name, description, category, instructions, username },
-			{ Recipe }
-		) => {
+		addRecipe: async (root, { name, description, category, instructions, username }, { Recipe }) => {
 			return await new Recipe({
 				name,
 				description,
@@ -69,11 +65,11 @@ exports.resolvers = {
 				username
 			}).save();
 		},
-		signUpUser: async (
-			root,
-			{ username, email, password },
-			{ User }
-		) => {
+		deleteUserRecipe: async (root, { _id }, { Recipe }) => {
+			const deleted = await Recipe.findOneAndRemove({ _id });
+			return deleted;
+		},
+		signUpUser: async (root, { username, email, password }, { User }) => {
 			const user = await User.findOne({ username });
 			if (user) {
 				throw new Error("user exists");
