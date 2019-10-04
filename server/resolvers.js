@@ -69,6 +69,11 @@ exports.resolvers = {
 			const deleted = await Recipe.findOneAndRemove({ _id });
 			return deleted;
 		},
+		likeRecipe: async (root, { _id, username }, { Recipe, User }) => {
+			const recipe = await Recipe.findOneAndUpdate({ _id }, { $inc: { likes: 1 } });
+			const user = await User.findOneAndUpdate({ username }, { $addToSet: { favourites: _id } });
+			return recipe;
+		},
 		signUpUser: async (root, { username, email, password }, { User }) => {
 			const user = await User.findOne({ username });
 			if (user) {
@@ -91,5 +96,4 @@ exports.resolvers = {
 
 		}
 	},
-
 };
