@@ -72,7 +72,6 @@ export const GET_CURRENT_USER = gql`
             favourites{
                 _id
                 name
-
             }
         }
     }

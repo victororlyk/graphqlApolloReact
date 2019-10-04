@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9188d527-41fd-4806-af5a-9a40e40e7161" name="Default Changelist" comment="" />
+    <list default="true" id="9188d527-41fd-4806-af5a-9a40e40e7161" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/queries/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/queries/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/resolvers.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +40,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v12.7.0/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -85,7 +90,7 @@
       <workItem from="1570005716659" duration="13378000" />
       <workItem from="1570086069262" duration="15246000" />
       <workItem from="1570106701349" duration="1026000" />
-      <workItem from="1570172085503" duration="2934000" />
+      <workItem from="1570172085503" duration="3944000" />
     </task>
     <task id="LOCAL-00001" summary="adding recipes, sign in sign out">
       <created>1570173648297</created>
@@ -114,6 +119,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/client" />
+    </ignored-roots>
     <MESSAGE value="adding recipes, sign in sign out" />
     <option name="LAST_COMMIT_MESSAGE" value="adding recipes, sign in sign out" />
   </component>

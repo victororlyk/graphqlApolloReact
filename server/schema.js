@@ -31,7 +31,7 @@ exports.typeDefs = `
     searchRecipes(searchTerm: String): [Recipe] 
     
     getCurrentUser: User
-    getUserRecipes: [Recipe]
+    getUserRecipes(username: String): [Recipe]
   }
   
   type Mutation {

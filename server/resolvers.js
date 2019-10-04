@@ -42,7 +42,7 @@ exports.resolvers = {
 			}
 			const user = await User.findOne({ username: currentUser.username })
 				.populate({
-					path: "favouries",
+					path: "favourites",
 					model: "Recipe"
 				});
 			return user;
@@ -50,7 +50,7 @@ exports.resolvers = {
 		},
 		getUserRecipes: async (root, { username }, { Recipe }) => {
 			const userRecipes = await Recipe.find({ username }).sort({
-				createdDate: "desc"
+				createdAt: "desc"
 			});
 			return userRecipes;
 		},
