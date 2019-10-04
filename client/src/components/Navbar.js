@@ -1,17 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
 import SignOut from "./auth/SignOut";
-
-
-const Navbar = ({ session }) => {
-  return (
-    <nav>
-      { session && session.getCurrentUser ?
-        <NavbarAuth  { ...{ session } } /> :
-        <NavbarUnAuth /> }
-    </nav>
-  );
-};
 
 const NavbarUnAuth = () => (
   <ul>
@@ -48,4 +38,15 @@ const NavbarAuth = ({ session }) => (
     <h2>hello { session.getCurrentUser.username }</h2>
   </>
 );
+
+const Navbar = ({ session }) => {
+  return (
+    <nav>
+      { session && session.getCurrentUser ?
+        <NavbarAuth  { ...{ session } } /> :
+        <NavbarUnAuth /> }
+    </nav>
+  );
+};
+
 export default Navbar;

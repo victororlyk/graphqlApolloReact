@@ -4,7 +4,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
-import withSession from "./components/withSession";
+import withSession from "./components/hoc/withSession";
 import Navbar from "./components/Navbar";
 import App from "./components/App";
 import SignIn from "./components/auth/SignIn";

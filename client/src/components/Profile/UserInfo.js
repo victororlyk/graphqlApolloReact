@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const UserInfo = ({ session: { getCurrentUser: { username, email, joinDate, favourites } } }) => {
 	const formatDate = date => {
 		const newDate = new Date(date).toLocaleDateString("en-US");
@@ -24,4 +23,5 @@ const UserInfo = ({ session: { getCurrentUser: { username, email, joinDate, favo
 		</div>
 	);
 };
+
 export default UserInfo;

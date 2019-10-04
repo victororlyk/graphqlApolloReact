@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9188d527-41fd-4806-af5a-9a40e40e7161" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/hoc/withAuth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/UserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/UserRecipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/UserRecipes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Recipe/AddRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Recipe/AddRecipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Recipe/RecipePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Recipe/RecipePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Recipe/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Recipe/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/withSession.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/hoc/withSession.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/queries/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/queries/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/resolvers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Recipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components/hoc" />
       <recent name="$PROJECT_DIR$/client/src/components/Recipe" />
       <recent name="$PROJECT_DIR$/client/src/components/auth" />
       <recent name="$PROJECT_DIR$/client/src/components" />
@@ -90,7 +104,7 @@
       <workItem from="1570005716659" duration="13378000" />
       <workItem from="1570086069262" duration="15246000" />
       <workItem from="1570106701349" duration="1026000" />
-      <workItem from="1570172085503" duration="3944000" />
+      <workItem from="1570172085503" duration="5978000" />
     </task>
     <task id="LOCAL-00001" summary="adding recipes, sign in sign out">
       <created>1570173648297</created>

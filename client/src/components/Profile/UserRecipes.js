@@ -1,6 +1,7 @@
 import React from "react";
 import { Query } from "react-apollo";
 import { Link } from "react-router-dom";
+
 import { GET_USER_RECIPES } from "../../queries";
 
 const UserRecipes = ({ session: { getCurrentUser: { username } } }) => {
@@ -26,4 +27,5 @@ const UserRecipes = ({ session: { getCurrentUser: { username } } }) => {
 		</Query>
 	);
 };
+
 export default UserRecipes;

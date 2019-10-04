@@ -28,4 +28,5 @@ const RecipePage = ({ match }) => {
 		</Query>
 	);
 };
+
 export default withRouter(RecipePage);

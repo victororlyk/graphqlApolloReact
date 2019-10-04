@@ -1,5 +1,6 @@
 import React from "react";
 import { Query } from "react-apollo";
+
 import RecipeItem from "./Recipe/RecipeItem";
 import { GET_ALL_RECIPES } from "../queries";
 import "./App.css";

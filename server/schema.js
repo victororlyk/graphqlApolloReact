@@ -1,6 +1,5 @@
 //this is schema for graphql, graphql syntax
 exports.typeDefs = `
-
   type Recipe {
     _id: ID
     name: String!

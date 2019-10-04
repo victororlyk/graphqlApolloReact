@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 
 import { ADD_RECIPE, GET_ALL_RECIPES } from "../../queries";
 import Error from "../Error";
+import withAuth from "../hoc/withAuth";
 
 const initialState = {
 	name: "",
@@ -46,14 +47,15 @@ class AddRecipe extends Component {
 		return isInvalid;
 	};
 	//maybe async is not necessary here.
-	updateCache = async (cache, { data:{addRecipe}}) => {
+	updateCache = async (cache, { data: { addRecipe } }) => {
 		// get old data
 		const { getAllRecipes } = await cache.readQuery({ query: GET_ALL_RECIPES });
 		// put new data to old data
 		cache.writeQuery({
 			query: GET_ALL_RECIPES,
 			data: {
-				getAllRecipe: [ addRecipe, ...getAllRecipes ] }
+				getAllRecipe: [ addRecipe, ...getAllRecipes ]
+			}
 		});
 	};
 
@@ -94,4 +96,5 @@ class AddRecipe extends Component {
 	}
 }
 
-export default withRouter(AddRecipe);
+export default withAuth(session => session && session.getCurrentUser)
+(withRouter(AddRecipe));

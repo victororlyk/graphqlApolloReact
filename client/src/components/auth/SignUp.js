@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Mutation } from "react-apollo";
 import { withRouter } from "react-router-dom";
+
 import { SIGN_UP_USER } from "../../queries";
 import Error from "../Error";
 
