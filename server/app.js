@@ -33,7 +33,7 @@ const schema = makeExecutableSchema({
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("db.connected"))
-  .catch(err => console.log(err));
+  .catch(err => console.log(err, 'error in connecting to db'));
 
 //initialize application
 const app = express();

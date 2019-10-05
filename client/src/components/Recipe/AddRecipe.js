@@ -18,7 +18,6 @@ class AddRecipe extends Component {
 	state = { ...initialState };
 
 	componentDidMount() {
-		console.log(this.props.session.getCurrentUser.username);
 		this.setState({ username: this.props.session.getCurrentUser.username });
 	}
 
@@ -35,7 +34,7 @@ class AddRecipe extends Component {
 		e.preventDefault();
 		addRecipe()
 			.then(({ data }) => {
-				console.log(data);
+				console.log(data, 'data after add recipe');
 			});
 		this.clearState();
 		this.props.history.push("/");
@@ -47,18 +46,19 @@ class AddRecipe extends Component {
 		return isInvalid;
 	};
 	//maybe async is not necessary here.
-	updateCache =  (cache, { data: { addRecipe } }) => {
+	updateCache = (cache, { data: { addRecipe } }) => {
 		// get old data
 		const { getAllRecipes } = cache.readQuery({ query: GET_ALL_RECIPES });
 		// put new data to old data
 		cache.writeQuery({
 			query: GET_ALL_RECIPES,
 			data: {
-				getAllRecipe: [ addRecipe, ...getAllRecipes ]
+				getAllRecipes: [ addRecipe, ...getAllRecipes ]
 			}
 		});
 	};
 
+//TODO this calls a porblem
 	render() {
 		const { name, category, description, instructions, username } = this.state;
 		return (
@@ -99,5 +99,4 @@ class AddRecipe extends Component {
 	}
 }
 
-export default withAuth(session => session && session.getCurrentUser)
-(withRouter(AddRecipe));
+export default withAuth(session => session && session.getCurrentUser)(withRouter(AddRecipe));

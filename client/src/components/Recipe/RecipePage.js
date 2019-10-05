@@ -12,7 +12,7 @@ const RecipePage = ({ match }) => {
 			{ ({ data, loading, error }) => {
 				if (loading) return <div>loading</div>;
 				if (error) return <div>error</div>;
-				const { name, category, description, instructions, createdDate, likes, username } = data.getRecipe;
+				const {_id, name, category, description, instructions, createdDate, likes, username } = data.getRecipe;
 				return (
 					<div className="App">
 						<h2>{ name }</h2>
