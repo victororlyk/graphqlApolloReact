@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9188d527-41fd-4806-af5a-9a40e40e7161" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/variables.env" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +97,7 @@
       <workItem from="1570431253316" duration="3640000" />
       <workItem from="1570435865224" duration="215000" />
       <workItem from="1570436103039" duration="80000" />
-      <workItem from="1570441235404" duration="3242000" />
+      <workItem from="1570441235404" duration="3794000" />
     </task>
     <task id="LOCAL-00001" summary="adding recipes, sign in sign out">
       <created>1570173648297</created>
