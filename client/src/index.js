@@ -16,7 +16,7 @@ import Profile from "./components/Profile/Profile";
 import "./index.css";
 
 const client = new ApolloClient({
-	uri: "http://localhost:4444/graphql",
+	uri: "https://react-apollographql-recipes.herokuapp.com/graphql",
 	fetchOptions: {
 		credentials: "include"
 	},
