@@ -37,7 +37,7 @@ class LikeRecipe extends Component {
 				});
 		}
 	};
-
+	//TODO likes and unlikes are not working correctly
 	updateLike = (cache, { data: { likeRecipe } }) => {
 		const { _id } = this.props;
 		const { getRecipe } = cache.readQuery({ query: GET_RECIPE, variables: { _id } });
@@ -45,23 +45,21 @@ class LikeRecipe extends Component {
 			{
 				query: GET_RECIPE,
 				variables: { _id },
-				data: { getRecipe, likes: likeRecipe.likes + 1 }
+				data: { ...getRecipe, likes: likeRecipe.likes + 1 }
 			}
 		);
 	};
-	//TODO likes and unlies are not working correctly
 	updateUnlike = (cache, { data: { unlikeRecipe } }) => {
 		const { _id } = this.props;
 		const { getRecipe } = cache.readQuery({ query: GET_RECIPE, variables: { _id } });
 		cache.writeQuery({
 			query: GET_RECIPE,
 			variables: { _id },
-			data: { getRecipe, likes: unlikeRecipe.likes - 1 }
+			data: { ...getRecipe, likes: unlikeRecipe.likes - 1 }
 		});
 	};
 
 	render() {
-		console.log(this.props, 'render');
 		const { username, liked } = this.state;
 		const { _id } = this.props;
 		return (
@@ -72,7 +70,7 @@ class LikeRecipe extends Component {
 							{ likeRecipe => {
 								return username && (
 									<button onClick={ () => this.handleClick(likeRecipe, unlikeRecipe) }>
-										{ liked ? "Liked" : "Like" }
+										{ liked ? "Unlike" : "Like" }
 									</button>
 								);
 							} }

@@ -34,7 +34,7 @@ class AddRecipe extends Component {
 		e.preventDefault();
 		addRecipe()
 			.then(({ data }) => {
-				console.log(data, 'data after add recipe');
+				// console.log(data, 'data after add recipe');
 			});
 		this.clearState();
 		this.props.history.push("/");

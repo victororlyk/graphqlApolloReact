@@ -10,7 +10,7 @@ const UserRecipes = ({ session: { getCurrentUser: { username } } }) => {
 		if (confirm) {
 			deleteUserRecipe()
 				.then(({ data }) => {
-					console.log(data);
+					// console.log(data);
 				});
 		}
 	};

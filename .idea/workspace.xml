@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9188d527-41fd-4806-af5a-9a40e40e7161" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/queries/fragment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profile/UserRecipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/UserRecipes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Recipe/AddRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Recipe/AddRecipe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Recipe/LikeRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Recipe/LikeRecipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Recipe/RecipePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Recipe/RecipePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/hoc/withSession.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/hoc/withSession.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/queries/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/queries/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Recipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/resolvers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +37,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,7 +45,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v12.7.0/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -98,7 +97,14 @@
       <workItem from="1570086069262" duration="15246000" />
       <workItem from="1570106701349" duration="1026000" />
       <workItem from="1570172085503" duration="13980000" />
-      <workItem from="1570259020632" duration="4016000" />
+      <workItem from="1570259020632" duration="4826000" />
+      <workItem from="1570387197768" duration="86000" />
+      <workItem from="1570387303475" duration="686000" />
+      <workItem from="1570388502440" duration="50000" />
+      <workItem from="1570431253316" duration="3640000" />
+      <workItem from="1570435865224" duration="215000" />
+      <workItem from="1570436103039" duration="80000" />
+      <workItem from="1570441235404" duration="2408000" />
     </task>
     <task id="LOCAL-00001" summary="adding recipes, sign in sign out">
       <created>1570173648297</created>
@@ -128,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570188008535</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="works everything exept auto update of like count">
+      <created>1570266193220</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570266193220</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +168,7 @@
     <MESSAGE value="corrected code style" />
     <MESSAGE value="deleting recipies is working, adding recipes updated query in profile" />
     <MESSAGE value="can like recipes" />
-    <option name="LAST_COMMIT_MESSAGE" value="can like recipes" />
+    <MESSAGE value="works everything exept auto update of like count" />
+    <option name="LAST_COMMIT_MESSAGE" value="works everything exept auto update of like count" />
   </component>
 </project>

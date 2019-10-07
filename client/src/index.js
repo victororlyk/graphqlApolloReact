@@ -30,7 +30,7 @@ const client = new ApolloClient({
 	},
 	onError: ({ networkError }) => {
 		if (networkError) {
-			console.log("network error", networkError);
+			// console.log("network error", networkError);
 		}
 	}
 });

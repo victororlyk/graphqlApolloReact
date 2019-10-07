@@ -32,8 +32,12 @@ const schema = makeExecutableSchema({
 // connect to database;
 mongoose
   .connect(process.env.MONGO_URI)
-  .then(() => console.log("db.connected"))
-  .catch(err => console.log(err, 'error in connecting to db'));
+  .then(() => {
+    // console.log("db.connected")
+  })
+  .catch(err => {
+    // console.log(err, 'error in connecting to db')
+  });
 
 //initialize application
 const app = express();
@@ -54,7 +58,7 @@ app.use(async (req, res, next) => {
       const currentUser = await jwt.verify(token, process.env.SECRET);
       req.currentUser = currentUser;
     } catch (e) {
-      console.log(e);
+      // console.log(e);
     }
   }
   next();
@@ -86,5 +90,5 @@ app.use(
 const PORT = process.env.PORT || 4444;
 
 app.listen(PORT, () => {
-  console.log(`server listening on ${ PORT }`);
+  // console.log(`server listening on ${ PORT }`);
 });
